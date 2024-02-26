@@ -134,7 +134,7 @@ function placeOrder() {
     };
 
     const promptBook = () => {
-      rl.question("Enter book ID and quantity (e.g., B001 2): ", (input) => {
+      rl.question("Enter book ID and quantity (e.g., 1 2): ", (input) => {
         const [bookId, quantity] = input.split(" ");
         const book = controller.books.find(
           (book) => book.id.toUpperCase() === bookId.toUpperCase()

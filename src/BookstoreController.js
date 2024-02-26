@@ -12,9 +12,9 @@ class BookstoreController {
   searchBooks(searchString) {
     return this.books.filter(
       (book) =>
-        book.title.includes(searchString) ||
-        book.author.includes(searchString) ||
-        book.ISBN === searchString
+        book.title.toLowerCase().includes(searchString.toLowerCase()) ||
+        book.author.toLowerCase().includes(searchString.toLowerCase()) ||
+        book.ISBN.toLowerCase().includes(searchString.toLowerCase())
     );
   }
 

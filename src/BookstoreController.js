@@ -1,5 +1,3 @@
-const Book = require("./Book");
-const Customer = require("./Customer");
 const Order = require("./Order");
 
 class BookstoreController {

@@ -2,7 +2,6 @@ const readline = require("readline");
 const BookstoreController = require("./src/BookstoreController");
 const Book = require("./src/Book");
 const Customer = require("./src/Customer");
-const Order = require("./src/Order");
 
 const rl = readline.createInterface({
   input: process.stdin,

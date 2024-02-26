@@ -6,7 +6,7 @@ class BookstoreController {
   constructor() {
     this.books = [];
     this.orders = [];
-    this.customers = []; // Add a customers array to store customer objects
+    this.customers = [];
   }
 
   searchBooks(searchString) {
@@ -14,7 +14,7 @@ class BookstoreController {
       (book) =>
         book.title.toLowerCase().includes(searchString.toLowerCase()) ||
         book.author.toLowerCase().includes(searchString.toLowerCase()) ||
-        book.ISBN.toLowerCase().includes(searchString.toLowerCase())
+        book.ISBN === searchString
     );
   }
 

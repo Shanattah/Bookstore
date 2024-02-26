@@ -21,15 +21,13 @@ test("Search for books by title, author, or ISBN", () => {
   const book3 = new Book(
     "Node.js Essentials",
     "Alice Johnson",
-    "1234567890111",
+    "3333333333",
     "B003"
   );
   controller.books = [book1, book2, book3];
 
   expect(controller.searchBooks("JavaScript")).toEqual([book1, book2]);
-
   expect(controller.searchBooks("Alice")).toEqual([book3]);
-
   expect(controller.searchBooks("1234567890")).toEqual([book1]);
 });
 

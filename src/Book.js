@@ -1,7 +1,6 @@
 class Book {
   constructor(title, author, ISBN, id) {
-    /*     const numericPart = ISBN.replace(/\D/g, ""); // Remove non-numerical characters
-     */ if (
+    if (
       typeof ISBN !== "string" ||
       (ISBN.length !== 10 && ISBN.length !== 13)
     ) {
